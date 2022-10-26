@@ -1,0 +1,101 @@
+:root{
+    /* colors */
+    --crl-primary-Soft-orange: hsl(35, 77%, 62%);
+    --crl-primary-Soft-red: hsl(5, 85%, 63%);
+    --crl-neutral-Off-white: hsl(36, 100%, 99%);
+    --crl-neutral-Grayish-blue: hsl(233, 8%, 79%);
+    --crl-neutral-Dark-grayish-blue: hsl(236, 13%, 42%);
+    --crl-neutral-Very-dark-blue: hsl(240, 100%, 5%);
+    /* Typography */
+    --fs-paragraph: 0.9375rem;
+    --ff:'Inter', sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+}
+
+/* css reseting rules */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a{
+    text-decoration: none;
+}
+/* styling layout using grid */
+body{
+    font-family: var(--ff);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-400);
+    /* center the main tag */
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    max-width: 34em;
+    margin: 0 auto;
+    display: grid;
+    /* max-width: 1400em; grid-template-columns: repeat(3, 1fr); */
+    gap: 1rem;
+}
+
+
+
+
+
+/* footer styles */
+.attribution {
+     font-size: 11px;
+     text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
