@@ -133,7 +133,6 @@ ul li a{
   right: 30px;
   
 }
-
 .menu-container{
   display: flex;
   justify-content: space-between;
@@ -147,7 +146,6 @@ ul li a{
   height: 4px;
   background-color: var(--crl-neutral-Very-dark-blue);
 }
-
 .menu-bars span:before,
 .menu-bars span::after,
 .menu-ul span:before,
@@ -176,8 +174,82 @@ ul li a{
   top: 0;
   transform: rotate(-45deg);
 }
-
-
+/* sttyyling main content */
+.bright h1{
+  font-size: 3rem;
+  font-weight: var(--fw-800);
+  width: 80%;
+}
+.description p{
+  font-size: 1.4rem;
+  line-height: 1.8;
+  padding-bottom: 1rem;
+  color: var(--crl-neutral-Dark-grayish-blue);
+}
+.description a{
+  
+  padding: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: block;
+  width: 50%;
+  
+ 
+  color: var(--crl-neutral-Off-white);
+  background-color: var(--crl-primary-Soft-red);
+}
+aside{
+  margin-top: 1.5rem;
+}
+aside div{
+  background-color: var(--crl-neutral-Very-dark-blue);
+padding: 0 1.5rem;
+padding-bottom: 1rem;
+}
+aside div h2{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: var(--crl-primary-Soft-orange);
+}
+aside div h3{
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  letter-spacing: 4px;
+  color: var(--crl-neutral-Grayish-blue);
+}
+aside div p{
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid var(--crl-neutral-Dark-grayish-blue);
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  color: var(--crl-neutral-Grayish-blue);
+}
+aside div .last-paragraph{
+  border-bottom: none;
+}
+/* styling the last cards */
+.card{
+  display: flex;
+  gap: 1.5rem;
+}
+.card h4{
+  font-size: 1.6rem;
+  color: var(--crl-neutral-Dark-grayish-blue);
+}
+.card h5{
+  font-size: 1.6rem;
+  padding: .5rem 0;
+  color: var(--crl-neutral-Very-dark-blue);
+  
+}
+.card p{
+  width: 90%;
+  font-size: 1.5rem;
+  color: var(--crl-neutral-Dark-grayish-blue);
+}
 
 
 
