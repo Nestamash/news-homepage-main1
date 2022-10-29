@@ -104,7 +104,7 @@ ul{
   background-color: var(--crl-neutral-Off-white); 
   transition: .5s ease-in-out;
 }
-#check:checked ~ ul{
+#check:checked ~ section ul{
   display: flex;
   width: 70%;
   right: 0;
@@ -113,6 +113,18 @@ ul{
 ul li a{ 
   text-transform: capitalize;
   padding: 2rem; 
+}
+ul li a:hover{
+  color: var(--crl-primary-Soft-orange);
+}
+.description a:hover{
+  background-color: var(--crl-neutral-Very-dark-blue);
+}
+aside h3:hover{
+  color: var(--crl-primary-Soft-orange);
+}
+.card-container h5:hover{
+  color: var(--crl-primary-Soft-orange);
 }
 /* styling hamburger bars */
 #check{
@@ -250,17 +262,102 @@ aside div .last-paragraph{
   font-size: 1.5rem;
   color: var(--crl-neutral-Dark-grayish-blue);
 }
-
-
-
-
-
-
 /* footer styles */
 .attribution {
-     font-size: 11px;
+     height: 80px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 1rem;
+     font-size: 0.9rem;
      text-align: center; 
+     background-color: var(--crl-neutral-Very-dark-blue);
+     color: var(--crl-neutral-Off-white);
     }
 .attribution a { 
+    font-size: 0.9rem;
     color: hsl(228, 45%, 44%); 
+}
+.card-container figure{
+  width: 300px;
+}
+img{
+  width: 100%;
+  overflow: hidden;
+}
+@media(min-width: 40em){
+  /* hide the humburger menu */
+  .menu-bars,
+  .menu-ul{
+    display: none;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    right: 29rem;
+    
+    padding-top: 1.7rem;
+    color: var(--crl-neutral-Very-dark-blue);
+    transition: .5s ease-in-out;
+  }
+  ul li a{ 
+    padding: 0.2rem; 
+  }
+  /* styling the grid columns and rows */
+  main{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px; 
+    grid-template-columns: repeat(3, 1fr); 
+     /*defining the grid areas  */
+     grid-template-areas: 
+     "nav nav nav"
+     "bg bg s"
+     "bright desc s"
+     "card card card"
+     "footer footer footer";
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: card;
+}
+.menu-container{
+  align-self: flex-start;
+  
+}
+nav{
+  display: flex;
+  align-items: center;
+  grid-area: nav;
+}
+.bg-image{
+  grid-area: bg;
+}
+.bright{
+  grid-area: bright;
+}
+.bright h1{
+  font-size: 3.5rem;
+}
+.description{
+  grid-area: desc;
+}
+aside{
+  grid-area: s;
+}
+.card-01 {
+  grid-area: 01;
+}
+.card-02{
+  grid-area: 02;
+}
+.card-03{
+  grid-area: 03;
+}
+.attribution{
+  grid-area: footer;
+}
 }
