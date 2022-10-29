@@ -111,6 +111,7 @@ ul{
   
 }
 ul li a{ 
+  color: var(--crl-neutral-Very-dark-blue);
   text-transform: capitalize;
   padding: 2rem; 
 }
